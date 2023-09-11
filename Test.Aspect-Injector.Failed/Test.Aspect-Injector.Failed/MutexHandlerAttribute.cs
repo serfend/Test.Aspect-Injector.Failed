@@ -33,6 +33,9 @@ namespace ProjectCommon.Attribute
 		/// 同步方法的描述
 		/// </summary>
 		public string? Description { get; set; }
+		/// <summary>
+		/// Inportant:Aspect need a argumentless ctor.
+		/// </summary>
 		public MutexHandlerAttribute() : this(null, 1, null) { }
 		public MutexHandlerAttribute(string? name = null, int max_count = 1, string? description = null)
 		{
